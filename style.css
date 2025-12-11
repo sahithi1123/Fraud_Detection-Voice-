@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #16181c;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 2vw;
+    background: #181a21;
+}
+
+.transaction-details-panel {
+    flex: 1;
+    background: rgba(26, 29, 38, 0.96);
+    box-shadow: 0 4px 32px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 480px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-details-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #e3e3e3;
+    letter-spacing: 1px;
+}
+
+form label {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #c7d0e9;
+    font-size: 1rem;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 11px;
+    font-size: 1.04em;
+    border: none;
+    border-radius: 10px;
+    background-color: #22243a;
+    color: #f5f5f5;
+    margin-bottom: 4px;
+    outline: none;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.12);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    box-shadow: 0 0 8px 2px #764ba2;
+    border: 1px solid #764ba2;
+}
+
+form button {
+    margin-top: 28px;
+    padding: 13px;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg,#c83d2f 40%,#e67349 90%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(200,61,47,0.24);
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #a82d1f 40%, #ea8a4c 90%);
+}
+
+.transaction-info {
+    margin-top: 38px;
+    background: rgba(32,34,44,0.85);
+    border-radius: 12px;
+    padding: 28px 16px;
+    color: #eee;
+    font-size: 1.07rem;
+    line-height: 2;
+}
+
+.anomaly-panel {
+    flex: .9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 40px 0 0 0;
+}
+
+.anomaly-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #e3e3e3;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.anomaly-card {
+    background: linear-gradient(90deg,#c83d2f 30%,#e67349 100%);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 28px rgba(184,61,47,0.38);
+    padding: 36px 42px;
+    min-width: 310px;
+    text-align: center;
+}
+
+.anomaly-status {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    padding-bottom: 5px;
+}
+
+.anomaly-info {
+    font-size: 1.07rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.6em;
+}
+
+.anomaly-probability {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 0.2em;
+    letter-spacing: 2px;
+}
